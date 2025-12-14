@@ -20,6 +20,12 @@ pipeline {
             }
         }
         stage('Test') {
+            agent {
+                docker {
+                    image 'node:24-alpine'
+                    reuseNode true
+                }
+            }
             steps {
                  sh '''
                    // Verify that the build directory exists and contains index.html
