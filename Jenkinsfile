@@ -29,7 +29,7 @@ pipeline {
             steps {
                  sh '''
                    # Verify that the build directory exists and contains index.html
-                   if [ -f dist/index.html ]; then
+                   if [ -f dist/theniche_webapp/index.html ]; then
                        echo "Build directory and index.html found."
                    else
                        echo "Build directory or index.html not found!"
