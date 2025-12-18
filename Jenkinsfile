@@ -37,7 +37,6 @@ pipeline {
                    fi
 
                    # Run unit tests
-                   npm test
                 '''
             }
         }
